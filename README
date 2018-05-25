@@ -25,9 +25,8 @@ Steps to create INFRA on AWS
 
    terraform init will initiaize terraform in current directory,just like git init.
    terraform plan will read main.tf and variable file to calculate possible errors or to count all future resources.
-   terraform apply will create infra and save that detail in terraform.tfstate, do not delete this file as it will 
-                          used further to delete resources.
+   terraform apply will create infra and save that detail in terraform.tfstate, do not delete this file as it will used further to delete resources.
 
 
 
-   terraform destroy    # will destroy vpc
+   terraform destroy will destroy vpc
