@@ -1,0 +1,24 @@
+Steps to create INFRA on AWS
+
+1: Install and configure AWSCLI, user should have ADMINISTRATOR Policy.
+2: Download and install TERRAFORM.
+3: Run below commands to create VPC
+   cd vpc
+   terraform init                           # will initiaize terraform in current directory,just like git init.
+   terraform plan                           # will read main.tf and variable file to calculate possible errors or to count all resources.
+   terraform apply                          # will create infra and save that detail in terraform.tfstate, do not delete this file as it will 
+                                              used further to delete resources.
+
+
+4: Run below commands to create RDS
+   cd rds
+   terraform init
+   terraform plan
+   terraform apply
+
+5: To destroy VPC or RDS run below command
+   cd vpc
+   terraform destroy                       # will destroy vpc
+
+   cd rds
+   terraform destroy                       # will destroy rds
